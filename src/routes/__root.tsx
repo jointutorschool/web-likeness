@@ -29,14 +29,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "CFAI" },
+      { name: "description", content: "Emergent Agent Copy replicates landing pages, capturing their content and structure for review." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "CFAI" },
+      { property: "og:description", content: "Emergent Agent Copy replicates landing pages, capturing their content and structure for review." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "CFAI" },
+      { name: "twitter:description", content: "Emergent Agent Copy replicates landing pages, capturing their content and structure for review." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ca2bbfa7-2dda-4eba-8ef1-2bde01f16c34/id-preview-91cc3dbf--286bf132-fbb4-44a4-a9a5-3d001c8a0caa.lovable.app-1777905949170.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ca2bbfa7-2dda-4eba-8ef1-2bde01f16c34/id-preview-91cc3dbf--286bf132-fbb4-44a4-a9a5-3d001c8a0caa.lovable.app-1777905949170.png" },
     ],
     links: [
       {
