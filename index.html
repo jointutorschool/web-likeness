@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cognitive Fingerprint AI — Learning Intelligence Infrastructure</title>
+<meta name="description" content="An API-first engine that understands how learners learn and how instruction works—at scale." />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: '#16a34a',
+          'brand-foreground': '#ffffff',
+          background: '#f6fbf7',
+          foreground: '#0f1f15',
+          card: '#ffffff',
+          'card-foreground': '#0f1f15',
+          muted: '#f1f5f2',
+          'muted-foreground': '#5b6b62',
+          border: '#e3ebe5',
+          accent: '#eaf5ec',
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(25%)} }
+  .animate-bounce { animation: bounce 1s infinite; }
+  body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+</style>
+</head>
+<body class="min-h-screen bg-background text-foreground">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
+  <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
+    <a href="#" class="flex items-center gap-2">
+      <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-brand/15 text-brand">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44A2.5 2.5 0 0 1 4.5 17a2.5 2.5 0 0 1-1.98-4.03A2.5 2.5 0 0 1 4.5 8a2.5 2.5 0 0 1 .54-4.96A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44A2.5 2.5 0 0 0 19.5 17a2.5 2.5 0 0 0 1.98-4.03A2.5 2.5 0 0 0 19.5 8a2.5 2.5 0 0 0-.54-4.96A2.5 2.5 0 0 0 14.5 2Z"/></svg>
+      </div>
+      <span class="text-sm font-bold tracking-tight">Cognitive Fingerprint AI<sup class="ml-0.5">™</sup></span>
+    </a>
+    <nav class="hidden gap-8 md:flex">
+      <a href="#problem" class="text-sm text-muted-foreground hover:text-foreground">Problem</a>
+      <a href="#how-it-works" class="text-sm text-muted-foreground hover:text-foreground">How It Works</a>
+      <a href="#engine" class="text-sm text-muted-foreground hover:text-foreground">CFA™ Engine</a>
+      <a href="#for-whom" class="text-sm text-muted-foreground hover:text-foreground">For Whom</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="relative overflow-hidden">
+  <div class="pointer-events-none absolute inset-0 -z-10">
+    <div class="absolute left-1/2 top-40 h-[600px] w-[900px] -translate-x-1/2 rounded-full bg-brand/10 blur-3xl"></div>
+  </div>
+  <div class="mx-auto max-w-5xl px-6 pb-24 pt-24 text-center md:pt-32">
+    <span class="inline-flex items-center gap-2 rounded-full border border-brand/20 bg-brand/10 px-3 py-1 text-xs font-medium text-brand">
+      <span class="h-1.5 w-1.5 rounded-full bg-brand"></span> Learning Intelligence AI Infrastructure
+    </span>
+    <h1 class="mt-8 text-5xl font-bold tracking-tight md:text-7xl">
+      Cognitive Fingerprint <span class="text-brand">AI<sup class="text-3xl md:text-4xl">™</sup></span>
+    </h1>
+    <p class="mx-auto mt-6 max-w-2xl text-lg font-medium text-foreground/80 md:text-xl">
+      An API-first engine that understands how learners learn and how instruction works—at scale.
+    </p>
+    <p class="mx-auto mt-5 max-w-2xl text-base text-muted-foreground">
+      Cognitive Fingerprint AI is a learning intelligence engine grounded in learning science, modeling learner–instructor interactions to drive measurable learning outcomes beyond content delivery and test scores.
+    </p>
+    <div class="mt-10 flex flex-wrap items-center justify-center gap-3">
+      <a href="#how-it-works" class="inline-flex items-center gap-2 rounded-lg bg-brand px-5 py-3 text-sm font-semibold text-brand-foreground shadow-lg shadow-brand/25 hover:opacity-90">Explore How It Works →</a>
+      <a href="#for-whom" class="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-5 py-3 text-sm font-semibold hover:bg-accent">For Platforms &amp; Institutions</a>
+    </div>
+    <div class="mt-16 flex justify-center text-brand/60">
+      <svg class="h-6 w-6 animate-bounce" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section id="problem" class="border-t border-border/60 py-24">
+  <div class="mx-auto max-w-5xl px-6 text-center">
+    <h2 class="text-4xl font-bold tracking-tight md:text-5xl">Education Still Runs on Averages</h2>
+    <p class="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground">
+      Learners learn differently. Instruction varies widely. <span class="font-semibold text-foreground">Yet most education systems are built around standardisation.</span>
+    </p>
+    <p class="mt-3 text-muted-foreground">Assessment scores capture outcomes—but not how learning happens.</p>
+    <div class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="rounded-xl border border-border bg-card p-6 text-left text-sm font-medium shadow-sm">Teaching styles vary widely</div>
+      <div class="rounded-xl border border-border bg-card p-6 text-left text-sm font-medium shadow-sm">Learning patterns are deeply individual</div>
+      <div class="rounded-xl border border-border bg-card p-6 text-left text-sm font-medium shadow-sm">Assessments are static and shallow</div>
+      <div class="rounded-xl border border-border bg-card p-6 text-left text-sm font-medium shadow-sm">Learning gaps grow silently</div>
+    </div>
+    <p class="mx-auto mt-10 max-w-2xl text-muted-foreground">
+      As a result, personalisation remains shallow and reactive, optimising content rather than learning itself.
+    </p>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="border-t border-border/60 bg-brand/[0.04] py-24">
+  <div class="mx-auto max-w-4xl px-6 text-center">
+    <p class="text-sm font-semibold uppercase tracking-wider text-brand">The Solution</p>
+    <h2 class="mt-3 text-4xl font-bold tracking-tight md:text-5xl">From Content to Learning Intelligence</h2>
+    <p class="mt-6 text-lg text-muted-foreground">True personalisation requires understanding learning behaviour, not just engagement.</p>
+    <p class="mt-4 text-muted-foreground">
+      Cognitive Fingerprint AI captures how learners respond to instruction, how teaching styles vary, and how outcomes evolve across real interactions. This enables fit-based decision-making—replacing trial-and-error approaches with data-driven learning intelligence grounded in how learning actually occurs.
+    </p>
+  </div>
+</section>
+
+<!-- ENGINE -->
+<section id="engine" class="border-t border-border/60 py-24">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="text-center">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand">CFA™ Engine</p>
+      <h2 class="mt-3 text-4xl font-bold tracking-tight md:text-5xl">What Is Cognitive Fingerprint AI™?</h2>
+      <p class="mx-auto mt-6 max-w-3xl text-muted-foreground">
+        An API-first learning intelligence engine inspired by learning science and the neuroscience of learning. Rather than optimising content delivery, the engine operates at the <span class="font-semibold text-foreground">decision layer</span>—modelling learning as a dynamic relationship between learner and instruction, continuously refined through real educational interactions.
+      </p>
+    </div>
+    <div class="mt-14 grid gap-6 md:grid-cols-2">
+      <div class="rounded-2xl border border-border bg-card p-8 shadow-sm">
+        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand/15 text-brand">🎓</div>
+        <h3 class="mt-5 text-xl font-bold">Learner</h3>
+        <p class="mt-3 text-muted-foreground">Models pacing, cognitive load, response patterns and reflection–action loops to build an evolving learner profile.</p>
+      </div>
+      <div class="rounded-2xl border border-border bg-card p-8 shadow-sm">
+        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand/15 text-brand">📚</div>
+        <h3 class="mt-5 text-xl font-bold">Instruction</h3>
+        <p class="mt-3 text-muted-foreground">Captures instructional intent, adaptability and pedagogy signals—turning teaching into structured, observable data.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT THINKS -->
+<section id="how-it-works" class="border-t border-border/60 bg-brand/[0.04] py-24">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="text-center">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand">Observable Behaviors</p>
+      <h2 class="mt-3 text-4xl font-bold tracking-tight md:text-5xl">How the Engine Thinks</h2>
+      <p class="mx-auto mt-6 max-w-2xl text-muted-foreground">Cognitive Fingerprint AI captures instruction-level signals that most platforms overlook.</p>
+    </div>
+    <div class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="flex items-center gap-4 rounded-xl border border-border bg-card p-5 shadow-sm"><div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand/15 text-brand">⏱</div><span class="font-medium">Pacing</span></div>
+      <div class="flex items-center gap-4 rounded-xl border border-border bg-card p-5 shadow-sm"><div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand/15 text-brand">🧠</div><span class="font-medium">Cognitive load</span></div>
+      <div class="flex items-center gap-4 rounded-xl border border-border bg-card p-5 shadow-sm"><div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand/15 text-brand">📈</div><span class="font-medium">Adaptability</span></div>
+      <div class="flex items-center gap-4 rounded-xl border border-border bg-card p-5 shadow-sm"><div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand/15 text-brand">🔗</div><span class="font-medium">Reflection–action patterns</span></div>
+      <div class="flex items-center gap-4 rounded-xl border border-border bg-card p-5 shadow-sm"><div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand/15 text-brand">✨</div><span class="font-medium">Instructional intent</span></div>
+      <div class="flex items-center gap-4 rounded-xl border border-border bg-card p-5 shadow-sm"><div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand/15 text-brand">⚡</div><span class="font-medium">Learning response</span></div>
+    </div>
+    <p class="mx-auto mt-10 max-w-3xl text-center text-muted-foreground">
+      These signals form evolving learner and instruction profiles—sometimes referred to as <span class="font-semibold text-foreground">Unique Learning DNA</span>—allowing systems to understand why the same curriculum produces different outcomes for different learners.
+    </p>
+  </div>
+</section>
+
+<!-- FIT -->
+<section class="border-t border-border/60 py-24">
+  <div class="mx-auto max-w-4xl px-6 text-center">
+    <p class="text-sm font-semibold uppercase tracking-wider text-brand">Fit-Based Matching</p>
+    <h2 class="mt-3 text-4xl font-bold tracking-tight md:text-5xl">Fit, Not Ideology</h2>
+    <p class="mt-6 text-muted-foreground">Cognitive Fingerprint AI does not assume one teaching style works for everyone.</p>
+    <div class="mt-10 grid gap-6 md:grid-cols-2">
+      <div class="rounded-xl border border-border bg-card p-6 text-left shadow-sm"><p class="font-medium">Some learners thrive under facilitation.</p></div>
+      <div class="rounded-xl border border-border bg-card p-6 text-left shadow-sm"><p class="font-medium">Others require structured instruction.</p></div>
+    </div>
+    <p class="mx-auto mt-8 max-w-2xl text-muted-foreground">
+      The engine's role is to identify and refine <span class="font-semibold text-foreground">fit</span>—using outcome-driven feedback loops rather than static preferences, ratings, or assumptions.
+    </p>
+  </div>
+</section>
+
+<!-- COMPOUND -->
+<section class="border-t border-border/60 bg-brand/[0.04] py-24">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="text-center">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand">Continuous Learning</p>
+      <h2 class="mt-3 text-4xl font-bold tracking-tight md:text-5xl">Built to Compound Intelligence</h2>
+      <p class="mt-6 text-muted-foreground">The engine improves with every learning interaction.</p>
+    </div>
+    <div class="mt-12 grid gap-6 md:grid-cols-2">
+      <div class="rounded-2xl border border-border bg-card p-8 shadow-sm">
+        <h3 class="text-xl font-bold">High-fidelity data</h3>
+        <p class="mt-3 text-muted-foreground">Real instructional environments generate high-fidelity, instruction-level data that continuously trains the engine.</p>
+      </div>
+      <div class="rounded-2xl border border-border bg-card p-8 shadow-sm">
+        <h3 class="text-xl font-bold">Compounding flywheel</h3>
+        <p class="mt-3 text-muted-foreground">Incentive-aligned participation preserves natural teaching behaviour, creating a compounding learning intelligence flywheel that's difficult to replicate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPLOYMENT -->
+<section class="border-t border-border/60 py-24">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="text-center">
+      <h2 class="text-4xl font-bold tracking-tight md:text-5xl">How Cognitive Fingerprint AI Is Deployed</h2>
+      <p class="mx-auto mt-6 max-w-3xl text-muted-foreground">Delivered via APIs and licensing, enabling platforms and institutions to embed learning intelligence directly into their existing systems.</p>
+    </div>
+    <div class="mt-12 grid gap-6 md:grid-cols-3">
+      <div class="rounded-2xl border border-border bg-card p-7 shadow-sm">
+        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/15 text-brand">{ }</div>
+        <h3 class="mt-5 text-lg font-bold">API Integration</h3>
+        <p class="mt-2 text-sm text-muted-foreground">Plug Cognitive Fingerprint AI into existing platforms via clean, well-documented APIs.</p>
+      </div>
+      <div class="rounded-2xl border border-border bg-card p-7 shadow-sm">
+        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/15 text-brand">⧉</div>
+        <h3 class="mt-5 text-lg font-bold">Licensing</h3>
+        <p class="mt-2 text-sm text-muted-foreground">License the engine for institutional deployments with model and data governance built in.</p>
+      </div>
+      <div class="rounded-2xl border border-border bg-card p-7 shadow-sm">
+        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/15 text-brand">✨</div>
+        <h3 class="mt-5 text-lg font-bold">Strategic Pilots</h3>
+        <p class="mt-2 text-sm text-muted-foreground">Co-design pilots that validate outcomes and refine fit for your context.</p>
+      </div>
+    </div>
+    <p class="mx-auto mt-10 max-w-3xl text-center text-muted-foreground">
+      Strategic pilots support outcome validation and integration, allowing partners to adopt learning intelligence <span class="font-semibold text-foreground">without rebuilding core infrastructure</span>.
+    </p>
+  </div>
+</section>
+
+<!-- LIVE -->
+<section class="border-t border-border/60 bg-brand/[0.04] py-24">
+  <div class="mx-auto max-w-4xl px-6 text-center">
+    <p class="text-sm font-semibold uppercase tracking-wider text-brand">Now Live</p>
+    <h2 class="mt-3 text-4xl font-bold tracking-tight md:text-5xl">Where Cognitive Fingerprint AI Operates Today</h2>
+    <p class="mt-6 text-muted-foreground">
+      Cognitive Fingerprint AI is live at <span class="font-semibold text-foreground">TutorSchool</span>—a real-world learning system that enables the engine to observe instruction, refine models, and harden learning intelligence.
+    </p>
+    <p class="mt-4 text-muted-foreground">
+      TutorSchool functions as an operational environment where authentic learning interactions continuously strengthen the engine deployed via APIs to platforms and institutions.
+    </p>
+  </div>
+</section>
+
+<!-- FOR WHOM -->
+<section id="for-whom" class="border-t border-border/60 py-24">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="text-center">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand">For Everyone</p>
+      <h2 class="mt-3 text-4xl font-bold tracking-tight md:text-5xl">Built for Education Systems</h2>
+    </div>
+    <div class="mt-12 grid gap-6 md:grid-cols-3">
+      <div class="rounded-2xl border border-border bg-card p-7 shadow-sm">
+        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/15 text-brand">🌐</div>
+        <h3 class="mt-5 text-lg font-bold">Education Platforms</h3>
+        <p class="mt-2 text-sm text-muted-foreground">Embed adaptive learning intelligence without building complex learning systems in-house.</p>
+      </div>
+      <div class="rounded-2xl border border-border bg-card p-7 shadow-sm">
+        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/15 text-brand">🏫</div>
+        <h3 class="mt-5 text-lg font-bold">Schools &amp; Institutions</h3>
+        <p class="mt-2 text-sm text-muted-foreground">Gain cohort-level insight into learning outcomes and intervention needs.</p>
+      </div>
+      <div class="rounded-2xl border border-border bg-card p-7 shadow-sm">
+        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/15 text-brand">{ }</div>
+        <h3 class="mt-5 text-lg font-bold">Learning System Builders</h3>
+        <p class="mt-2 text-sm text-muted-foreground">Power AI tutors, LMSs, and assessment tools with decision-grade learning intelligence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFFERENTIATORS -->
+<section class="border-t border-border/60 bg-brand/[0.04] py-24">
+  <div class="mx-auto max-w-5xl px-6">
+    <div class="text-center">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand">What Sets Us Apart</p>
+      <h2 class="mt-3 text-4xl font-bold tracking-tight md:text-5xl">Why Cognitive Fingerprint AI Is Different</h2>
+    </div>
+    <ul class="mx-auto mt-12 grid max-w-3xl gap-3">
+      <li class="flex items-start gap-3 rounded-xl border border-border bg-card p-5 shadow-sm"><div class="mt-0.5 flex h-6 w-6 items-center justify-center rounded-full bg-brand/15 text-brand">✦</div><span class="text-sm font-medium">Built on instruction-level interaction data—not surface engagement metrics</span></li>
+      <li class="flex items-start gap-3 rounded-xl border border-border bg-card p-5 shadow-sm"><div class="mt-0.5 flex h-6 w-6 items-center justify-center rounded-full bg-brand/15 text-brand">✦</div><span class="text-sm font-medium">Compounds intelligence through outcome-driven feedback loops</span></li>
+      <li class="flex items-start gap-3 rounded-xl border border-border bg-card p-5 shadow-sm"><div class="mt-0.5 flex h-6 w-6 items-center justify-center rounded-full bg-brand/15 text-brand">✦</div><span class="text-sm font-medium">Encodes teaching-pattern signals most platforms ignore</span></li>
+      <li class="flex items-start gap-3 rounded-xl border border-border bg-card p-5 shadow-sm"><div class="mt-0.5 flex h-6 w-6 items-center justify-center rounded-full bg-brand/15 text-brand">✦</div><span class="text-sm font-medium">Grounded in learning science rather than heuristics</span></li>
+    </ul>
+    <p class="mx-auto mt-10 max-w-2xl text-center text-lg font-medium">
+      Cognitive Fingerprint AI is not a feature. <span class="text-brand">It is learning intelligence infrastructure.</span>
+    </p>
+  </div>
+</section>
+
+<!-- VISION -->
+<section class="border-t border-border/60 py-24">
+  <div class="mx-auto max-w-3xl px-6 text-center">
+    <h2 class="text-4xl font-bold tracking-tight md:text-5xl">Our Vision</h2>
+    <p class="mx-auto mt-8 text-lg text-muted-foreground">
+      To build the <span class="font-semibold text-foreground">learning intelligence AI infrastructure</span> that understands how humans learn together and enables outcome-driven education at scale across platforms and institutions.
+    </p>
+    <a href="mailto:hello@cognitivefingerprint.ai" class="mt-10 inline-flex items-center gap-2 rounded-lg bg-brand px-6 py-3 text-sm font-semibold text-brand-foreground shadow-lg shadow-brand/25 hover:opacity-90">Partner with Us →</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="border-t border-border/60 py-10">
+  <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 md:flex-row">
+    <div class="flex items-center gap-2 text-sm text-muted-foreground">
+      <span class="text-brand">◆</span><span>Cognitive Fingerprint AI™</span>
+    </div>
+    <p class="text-xs text-muted-foreground">© <span id="y"></span> All rights reserved.</p>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
