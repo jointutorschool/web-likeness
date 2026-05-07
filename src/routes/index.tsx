@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Sparkles, Building2, Brain, Activity, Gauge, Network, Layers, Zap, GraduationCap, School, Code2, ChevronDown } from "lucide-react";
+import isbLogo from "@/assets/isb-iventure.jpg";
+import nvidiaLogo from "@/assets/nvidia-inception.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -355,6 +357,21 @@ function Vision() {
   );
 }
 
+function Recognition() {
+  return (
+    <section className="border-t border-border/40 py-16">
+      <div className="mx-auto max-w-5xl px-6 text-center">
+        <SectionLabel>Recognition</SectionLabel>
+        <h2 className="mt-3 text-2xl font-bold tracking-tight md:text-3xl">Recognized & Backed By</h2>
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-10 md:gap-16">
+          <img src={isbLogo} alt="ISB I-Venture" className="h-16 w-auto object-contain md:h-20" />
+          <img src={nvidiaLogo} alt="NVIDIA Inception Program" className="h-16 w-auto object-contain md:h-20" />
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Footer() {
   return (
     <footer className="border-t border-border/40 py-10">
@@ -386,6 +403,7 @@ function Index() {
         <ForWhom />
         <Differentiators />
         <Vision />
+        <Recognition />
       </main>
       <Footer />
     </div>
