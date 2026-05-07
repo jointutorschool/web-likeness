@@ -392,6 +392,7 @@ function Index() {
       <Nav />
       <main>
         <Hero />
+        <Recognition />
         <Problem />
         <Solution />
         <Engine />
@@ -403,7 +404,6 @@ function Index() {
         <ForWhom />
         <Differentiators />
         <Vision />
-        <Recognition />
       </main>
       <Footer />
     </div>
